@@ -1,0 +1,203 @@
+@import url(themes.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: VarelaRound, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+@font-face {
+  font-family: VarelaRound;
+  src: url(VarelaRound-Regular.ttf);
+}
+
+.them-button {
+  position: absolute;
+  top: 50px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--secondary);
+  letter-spacing: 2px;
+  border: 3px solid var(--secondary);
+  box-shadow: 0 0 5px var(--shadow);
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.them-button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.notes {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+  height: 465px;
+  overflow-y: scroll;
+  position: relative;
+}
+.note {
+  background-color: var(--secondary);
+  padding: 0 12px;
+  color: var(--primary);
+  border-radius: 8px;
+}
+.title {
+  color: var(--secondary);
+  border-radius: 8px;
+  top: 0;
+}
+.note-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary);
+  background: var(--bg-body-gradient);
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  background: var(--bg-card-gradient);
+  padding: 28px;
+  border-radius: 12px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+  box-shadow: 0 0 20px var(--shadow);
+}
+
+#mou3adel {
+  text-align: center;
+  padding: 5px;
+  height: 42px;
+  background-color: var(--secondary);
+  box-shadow: 0 0 5px var(--shadow);
+  border-radius: 8px;
+  color: var(--primary);
+}
+.input-container {
+  transition: all 0.3s;
+}
+.input-container button {
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  color: var(--primary);
+  transition: all 0.15s;
+}
+.button-holder {
+  background-color: var(--secondary);
+  box-shadow: 0 0 5px var(--shadow);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--primary);
+  position: relative;
+  height: 30px;
+}
+.button-holder:hover button:enabled {
+  color: var(--primary);
+  top: -3px;
+  bottom: 3px;
+}
+button:disabled {
+  filter: brightness(0.5);
+  cursor: not-allowed;
+}
+button:enabled {
+  cursor: pointer;
+}
+.input-container input {
+  box-shadow: 0 0 5px var(--shadow);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  outline-color: var(--primary);
+  background-color: var(--secondary);
+  width: 80%;
+}
+button#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+svg .bg {
+  fill: var(--secondary);
+}
+svg .stroke {
+  fill: var(--primary);
+}
+.button-holder.submit {
+  background-color: transparent;
+  box-shadow: none;
+}
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+.submit {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Vertical scrollbar */
+  height: 0px; /* Horizontal scrollbar */
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* Thumb (draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+  width: 5px;
+}
+
+/* On hover, make the thumb darker */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}

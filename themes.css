@@ -1,0 +1,101 @@
+.theme-purple {
+  --primary: rgb(136, 0, 255);
+  --secondary: rgb(241, 181, 255);
+  --shadow: rgba(136, 0, 255, 0.51);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    rgb(255, 0, 255),
+    rgb(184, 51, 225),
+    rgb(180, 24, 204),
+    rgb(183, 0, 255),
+    rgb(106, 0, 156),
+    rgb(59, 8, 96)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    rgb(179, 0, 255),
+    rgb(200, 0, 255)
+  );
+}
+.theme-blue {
+  --primary: hsl(180, 97%, 40%);
+  --secondary: hsl(180, 98%, 17%);
+  --shadow: hsla(180, 97.1%, 40%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(180, 100%, 25%),
+    hsl(195, 100%, 30%),
+    hsl(210, 100%, 35%),
+    hsl(225, 60%, 45%),
+    hsl(240, 50%, 55%),
+    hsl(255, 40%, 65%)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsl(190, 100%, 40%),
+    hsl(200, 93%, 42%)
+  );
+}
+.theme-red {
+  --primary: rgb(255, 0, 0);
+  --secondary: rgb(255, 181, 181);
+  --shadow: rgba(126, 30, 30, 0.66);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    rgb(208, 37, 37),
+    rgb(184, 26, 26),
+    rgb(204, 24, 24),
+    rgb(255, 0, 77),
+    rgb(156, 0, 0),
+    rgb(96, 8, 8)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    rgb(255, 0, 77),
+    rgb(255, 0, 122)
+  );
+}
+.theme-dark {
+  --primary: rgb(0, 0, 0); /* Vibrant red */
+  --secondary: rgb(255, 140, 140); /* Softer red */
+  --shadow: rgba(255, 40, 40, 0.05);
+
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    rgb(20, 20, 20),
+    rgb(15, 15, 15),
+    rgb(10, 10, 10)
+  );
+
+  --bg-card-gradient: linear-gradient(
+    145deg,
+    rgb(30, 30, 30),
+    rgb(20, 20, 20),
+    rgb(15, 15, 15)
+  );
+}
+.theme-light {
+  --primary: rgb(200, 0, 0); /* Classic red */
+  --secondary: rgb(255, 80, 80); /* Bright accent */
+  --shadow: rgba(200, 0, 0, 0.24);
+  --bg-body: rgb(250, 250, 250); /* Off-white */
+  --text-primary: rgb(30, 30, 30); /* Dark gray */
+  --text-secondary: rgb(80, 80, 80);
+
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    rgb(255, 255, 255),
+    rgb(245, 245, 245),
+    var(--bg-body)
+  );
+
+  --bg-card-gradient: linear-gradient(
+    145deg,
+    rgb(255, 255, 255),
+    rgb(245, 245, 245),
+    rgb(235, 235, 235)
+  );
+}
