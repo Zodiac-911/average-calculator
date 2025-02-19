@@ -99,3 +99,103 @@
     rgb(235, 235, 235)
   );
 }
+.theme-warm-sunset {
+  --primary: hsl(30, 97%, 50%);
+  --secondary: hsl(44, 100%, 50%);
+  --shadow: hsla(30, 97.1%, 50%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(30, 100%, 40%),
+    hsl(20, 100%, 45%),
+    hsl(10, 100%, 50%),
+    hsl(0, 80%, 55%),
+    hsl(350, 60%, 60%),
+    hsl(340, 50%, 65%)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsl(20, 100%, 50%),
+    hsl(10, 93%, 55%)
+  );
+}
+.theme-cool-ocean {
+  --primary: hsl(210, 97%, 50%);
+  --secondary: hsl(210, 98%, 25%);
+  --shadow: hsla(210, 97.1%, 50%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(180, 100%, 50%),
+    hsl(189, 100%, 68%),
+    hsl(190, 100%, 50%),
+    hsl(180, 80%, 55%),
+    hsl(194, 100%, 50%),
+    hsl(160, 85%, 56%)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsl(200, 100%, 50%),
+    hsl(190, 93%, 55%)
+  );
+}
+.theme-forest-greens {
+  --primary: hsl(120, 97%, 40%);
+  --secondary: hsl(120, 98%, 20%);
+  --shadow: hsla(120, 97.1%, 40%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(120, 100%, 25%),
+    hsl(110, 100%, 30%),
+    hsl(100, 100%, 35%),
+    hsl(90, 60%, 40%),
+    hsl(80, 50%, 45%),
+    hsl(70, 40%, 50%)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsl(110, 100%, 40%),
+    hsl(100, 93%, 45%)
+  );
+}
+.theme-royal-purple {
+  --primary: hsl(268, 100%, 35%);
+  --secondary: hsl(270, 100%, 79%);
+  --shadow: hsla(270, 97.1%, 50%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(270, 100%, 40%),
+    hsl(260, 100%, 45%),
+    hsl(250, 100%, 50%),
+    hsl(240, 80%, 55%),
+    hsl(230, 60%, 60%),
+    hsl(220, 50%, 65%)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsl(260, 100%, 50%),
+    hsl(250, 93%, 55%)
+  );
+}
+.theme-rainbow-burst {
+  --primary: hsl(330, 100%, 65%);
+  --secondary: hsl(270, 80%, 40%);
+  --shadow: hsla(330, 97.1%, 50%, 0.47);
+  --bg-body-gradient: radial-gradient(
+    circle at top,
+    hsl(0, 100%, 50%, 0.5),
+    hsla(30, 100%, 50%, 0.5),
+    hsla(60, 100%, 50%, 0.5),
+    hsl(120, 100%, 50%, 0.5),
+    hsl(210, 100%, 50%, 0.5),
+    hsl(270, 100%, 50%, 0.5)
+  );
+  --bg-card-gradient: linear-gradient(
+    45deg,
+    var(--primary),
+    hsla(30, 100%, 50%, 0.123),
+    hsla(120, 100%, 50%, 0.192)
+  );
+}

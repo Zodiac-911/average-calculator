@@ -13,6 +13,11 @@ const themes = [
   "theme-red",
   "theme-dark",
   "theme-light",
+  "theme-warm-sunset",
+  "theme-cool-ocean",
+  "theme-forest-greens",
+  "theme-royal-purple",
+  "theme-rainbow-burst",
 ];
 let currentTheme = 0;
 let notes = [];
